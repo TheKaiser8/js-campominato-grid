@@ -7,22 +7,53 @@
     margin: 0;
 }
 /*-------------------
-    SCAFFOLDING
+    COMMON
 --------------------*/
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+/*-------------------
+    HEADER
+--------------------*/
 header  {
-    background-color: red;
-    height: 6.25rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
 }
+.player-controls {
+    display: flex;
+    align-items: center;
+}
+/*-------------------
+    MAIN
+--------------------*/
 main {
     background-color: #7fffd4;
     flex-grow: 1;
+    display: flex;
 }
-footer {
+.board {
+    height: 31.25rem;
+    width: 31.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto;
     background-color: gold;
-    height: 6.25rem;
+}
+.board__number {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------
+    FOOTER
+--------------------*/
+footer {
+    padding: 1.5rem 1rem;
 }
