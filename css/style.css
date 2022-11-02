@@ -6,3 +6,23 @@
     padding: 0;
     margin: 0;
 }
+/*-------------------
+    SCAFFOLDING
+--------------------*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header  {
+    background-color: red;
+    height: 6.25rem;
+}
+main {
+    background-color: #7fffd4;
+    flex-grow: 1;
+}
+footer {
+    background-color: gold;
+    height: 6.25rem;
+}
