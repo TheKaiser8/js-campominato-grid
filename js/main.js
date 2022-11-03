@@ -18,3 +18,18 @@
 /*------------------
     MAIN
 --------------------*/
+// seleziono il container in cui si trovano i numeri
+const boardContainer = document.querySelector('.board');
+
+// creo un ciclo FOR che mi permetta di generare 100 celle numerate da 1 a 100
+for (let i = 1; i <= 100; i++) {
+    const boardCell = document.createElement('div');
+    boardCell.innerHTML = i;
+    boardCell.classList.add('board__number');
+    // aggiungo evento click che colora di azzurro ogni cella del numero cliccato
+    boardCell.addEventListener('click', function() {
+        console.log(this.innerHTML);
+        this.classList.add('board__number--clicked')
+    });
+    boardContainer.append(boardCell);
+}
